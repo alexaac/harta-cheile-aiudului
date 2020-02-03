@@ -1,0 +1,27 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="EXIF_ImageDescription"></MDI>
+    <MDI key="EXIF_Make">Sony Ericsson</MDI>
+    <MDI key="EXIF_Model">K510i</MDI>
+    <MDI key="EXIF_Orientation">1</MDI>
+    <MDI key="EXIF_XResolution">(72)</MDI>
+    <MDI key="EXIF_YResolution">(72)</MDI>
+    <MDI key="EXIF_ResolutionUnit">2</MDI>
+    <MDI key="EXIF_Software">R4CJ001     prgCXC1250242_ORANGE_CO 4.8</MDI>
+    <MDI key="EXIF_DateTime">2007:09:22 12:14:19</MDI>
+    <MDI key="EXIF_YCbCrPositioning">2</MDI>
+    <MDI key="EXIF_ExifVersion">0220</MDI>
+    <MDI key="EXIF_DateTimeOriginal">2007:09:22 12:14:19</MDI>
+    <MDI key="EXIF_DateTimeDigitized">2007:09:22 12:14:19</MDI>
+    <MDI key="EXIF_ComponentsConfiguration">0x1 0x2 0x3 00</MDI>
+    <MDI key="EXIF_FlashpixVersion">0100</MDI>
+    <MDI key="EXIF_ColorSpace">1</MDI>
+    <MDI key="EXIF_PixelXDimension">1280</MDI>
+    <MDI key="EXIF_PixelYDimension">1024</MDI>
+    <MDI key="EXIF_Interoperability_Index">R98</MDI>
+    <MDI key="EXIF_Interoperability_Version">0x30 0x31 0x30 0x30</MDI>
+  </Metadata>
+</PAMDataset>

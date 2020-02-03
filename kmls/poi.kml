@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Folder><name>poi_4326</name>
+<Schema name="poi_4326" id="poi_4326">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="Description" type="string"></SimpleField>
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="Id" type="int"></SimpleField>
+	<SimpleField name="Cota" type="float"></SimpleField>
+	<SimpleField name="Descriere" type="string"></SimpleField>
+	<SimpleField name="url" type="string"></SimpleField>
+</Schema>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;412.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;412.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">412.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581604426424807,46.35811469907344,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;441.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;441.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">441.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.568564657106332,46.359124573561964,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;408.1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;408.1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">408.100000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.597755853598745,46.359162695641331,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;449.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;449.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">449.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.562265816490804,46.360186312562512,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;396.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;396.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">396.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.604851067588275,46.361800708060763,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;631.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;631.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">631.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.57924720927932,46.363790133214309,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;448.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;448.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">448.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.591940418851639,46.363510820140391,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;657.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;657.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">657.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.574807734454797,46.363954510550002,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Dealu Velii&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Dealu Velii&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="Id">2</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Dealu Velii</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.57444377956978,46.364379330110744,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Poiana Aiudului&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Poiana Aiudului&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="Id">3</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Poiana Aiudului</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.605597726475871,46.367127973383035,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;452.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;452.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">452.400000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.588912188118616,46.364959269284846,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;391.7&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;391.7&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">391.700000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.603253474287786,46.3646879437755,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;658.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;658.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">658.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.554766766583274,46.369210474173727,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;596.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;596.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">596.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.584784078374113,46.369283356060627,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;647.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;647.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">647.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.583596023301652,46.372141460974987,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Dealu Bogzii&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Dealu Bogzii&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="Id">2</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Dealu Bogzii</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.568458380471366,46.372634297388821,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;386.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;386.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">386.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.602748185944908,46.372030106818215,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;827.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;827.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">827.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.56992665759805,46.373339192033832,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;582.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;582.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">582.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.594721101538518,46.373316235082051,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Dealu Sipotelor&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Dealu Sipotelor&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="Id">2</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Dealu Sipotelor</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.554196821776546,46.375450620509028,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;772.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;772.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">772.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.561682592691785,46.376229631919244,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;832.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;832.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">832.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.570525994762683,46.376218094064598,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;La Chei&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;La Chei&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="Id">2</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">La Chei</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.579921183603144,46.376593791083188,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;399.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;399.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">399.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.600534382264559,46.377374399505264,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Vf. Rachis&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;779.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Vf. Rachis&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;779.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="Id">1</SimpleData>
+		<SimpleData name="Cota">779.000000</SimpleData>
+		<SimpleData name="Descriere">Vf. Rachis</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.588720260909962,46.378623688060536,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;749.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;749.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">749.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.574922409417155,46.379308194103217,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;607.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;607.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">607.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.606713332596787,46.379978975614428,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;722.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;722.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">722.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.58876128232135,46.382003011756694,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;482.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;482.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">482.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.577656783704416,46.385205910637232,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;635.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;635.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">635.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.588127854145604,46.385941074595209,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;435.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;435.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">435.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.605846625859254,46.385538857196366,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Fata Ratului&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Fata Ratului&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="Id">2</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Fata Ratului</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.596964949833463,46.38587994865771,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;522.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;522.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">522.400000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.562288987088163,46.388565064692003,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Valisoara&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Valisoara&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="Id">3</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Valisoara</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.563477839956743,46.389369257739915,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;696.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;696.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">696.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.590738436753789,46.389545638065115,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Data&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;884.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Data&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;884.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="Id">1</SimpleData>
+		<SimpleData name="Cota">884.400000</SimpleData>
+		<SimpleData name="Descriere">Data</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.582810910610942,46.39572602302956,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;731.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;731.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">731.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.591616024254076,46.396529470210368,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;704.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;704.0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">38</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">704.000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.602002998021977,46.39732009648192,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Coltul Cetatii&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Coltul Cetatii&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">39</SimpleData>
+		<SimpleData name="Id">99</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Coltul Cetatii</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.586837885801355,46.374762087152135,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Coltul Vili&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Coltul Vili&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="Id">99</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Coltul Vili</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.584750797731203,46.37178457056217,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Coltul Bogza&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Coltul Bogza&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="Id">99</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Coltul Bogza</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.578961452184931,46.378529739749084,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Coltul Diacului&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Coltul Diacului&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">42</SimpleData>
+		<SimpleData name="Id">99</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Coltul Diacului</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.585302592318666,46.381025316114659,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;La Tanc&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;La Tanc&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&quot;*&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">43</SimpleData>
+		<SimpleData name="Id">99</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">La Tanc</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.580887698055665,46.375093231633123,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Hard Rock&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei9.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Hard Rock&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei9.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">45</SimpleData>
+		<SimpleData name="Id">100</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Hard Rock</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei9.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.586970987440978,46.374092191182385,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;Tabara&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei4.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;Tabara&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei4.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">46</SimpleData>
+		<SimpleData name="Id">100</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="Descriere">Tabara</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei4.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.583421524321164,46.374336595973432,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei6.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei6.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">47</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei6.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.580810289726838,46.379934334143421,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei1.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei1.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">48</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei1.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.582884678043389,46.376304154589455,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei2.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei2.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">49</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei2.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581940090506389,46.379100874551945,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei2.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei2.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">50</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei2.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581820627964941,46.374670573790176,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei14.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei14.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">51</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei14.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581387228977377,46.373837114198707,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei10.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei10.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">52</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei10.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.58705910646654,46.374102322060473,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei19.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei19.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">53</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei19.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.58712795736713,46.374131829589302,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei8.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei8.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">54</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei8.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.583478859635761,46.374269531390482,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei7.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei7.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">55</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei7.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.580804631184236,46.380036308981239,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei21.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei21.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">56</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei21.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.580769222149648,46.380130733073479,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei3.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei3.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">57</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei3.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.582787537121284,46.376424587453045,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei20.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei20.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">58</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei20.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.582799340132816,46.376554420579879,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei22.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei22.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">59</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei22.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.582716719052105,46.376719662741301,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei17.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei17.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">60</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei17.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581902311256531,46.37919829516261,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei17.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei17.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">61</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei17.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581685135844378,46.374708429576579,0.0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei23.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</name>
+	<ExtendedData><SchemaData schemaUrl="#poi_4326">
+		<SimpleData name="Name">&lt;div&gt;&quot;*&quot;&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/chei/chei23.png&quot;&gt;&lt;/img&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</SimpleData>
+		<SimpleData name="OBJECTID">62</SimpleData>
+		<SimpleData name="Id">0</SimpleData>
+		<SimpleData name="Cota">0.000000</SimpleData>
+		<SimpleData name="url">&lt;img src=&quot;img/chei/chei23.png&quot;&gt;&lt;/img&gt;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.581270141958981,46.37390393631069,0.0</coordinates></Point>
+  </Placemark>
+</Folder></Document></kml>
