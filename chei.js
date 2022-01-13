@@ -3,16 +3,22 @@
 var chei = null;
 var maxOpacity = 0.9;
 var minOpacity = 0.3;
+
 function changeOpacity(byOpacity) {
-var op = parseFloat(OpenLayers.Util.getElement('opacity').value);
-chei.setOpacity(op);
-var newOpacity = (op + byOpacity).toFixed(1);
-newOpacity = Math.min(maxOpacity,  Math.max(minOpacity, newOpacity));
-OpenLayers.Util.getElement('opacity').value = newOpacity;
-}	
+  var op = parseFloat(OpenLayers.Util.getElement('opacity').value);
+  chei.setOpacity(op);
+  var newOpacity = (op + byOpacity).toFixed(1);
+  newOpacity = Math.min(maxOpacity, Math.max(minOpacity, newOpacity));
+  OpenLayers.Util.getElement('opacity').value = newOpacity;
+}
 
 var map;
-var mapBounds = new OpenLayers.Bounds(23.5511060871,46.3550979143,23.6141685816,46.399218161);
+var mapBounds = new OpenLayers.Bounds(
+  23.5511060871,
+  46.3550979143,
+  23.6141685816,
+  46.399218161
+);
 var mapMinZoom = 12;
 var mapMaxZoom = 16;
 
@@ -22,69 +28,82 @@ OpenLayers.Feature.Vector.style['default']['strokeWidth'] = '2';
 
 // avoid pink tiles
 OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
-OpenLayers.Util.onImageLoadErrorColor = "transparent";
+OpenLayers.Util.onImageLoadErrorColor = 'transparent';
 
-//https://lists.osgeo.org/pipermail/openlayers-users/2011-February/019398.html	
-var P4326   = new OpenLayers.Projection("EPSG:4326");
-var P32634 = new OpenLayers.Projection("EPSG:32634");
-var P900913 = new OpenLayers.Projection("EPSG:900913");
+//https://lists.osgeo.org/pipermail/openlayers-users/2011-February/019398.html
+var P4326 = new OpenLayers.Projection('EPSG:4326');
+var P32634 = new OpenLayers.Projection('EPSG:32634');
+var P900913 = new OpenLayers.Projection('EPSG:900913');
 
-MapTest = function(cfg) {
+MapTest = function (cfg) {
+  var self = this;
+  var i;
+  self.$mapContainer = $('#' + cfg.containerId);
+  self.updateContainerSize();
 
-	var self = this;
-	var i;
-	self.$mapContainer = $('#'+cfg.containerId);
-	self.updateContainerSize();
+  mapOptions = {
+    controls: [
+      new OpenLayers.Control.Navigation(),
+      new OpenLayers.Control.PanZoom(),
+      new OpenLayers.Control.MousePosition(),
+      new OpenLayers.Control.ScaleLine(),
+      new OpenLayers.Control.Permalink(),
+      // new OpenLayers.Control.MouseDefaults(),
+      // new OpenLayers.Control.KeyboardDefaults()
+    ],
+    projection: P900913,
+    displayProjection: P4326,
+    units: 'm',
+    maxResolution: 156543.0339,
+    maxExtent: new OpenLayers.Bounds(
+      -20037508,
+      -20037508,
+      20037508,
+      20037508.34
+    ),
+    restrictedExtent: new OpenLayers.Bounds(
+      2601697.137233,
+      5817437.653492,
+      2648717.210774,
+      5864556.646252
+    ),
+  };
 
-	mapOptions = {
-		controls: [
-		new OpenLayers.Control.Navigation(),
-		new OpenLayers.Control.PanZoom(),
-		new OpenLayers.Control.MousePosition(),
-		new OpenLayers.Control.ScaleLine(),
-		new OpenLayers.Control.Permalink()
-		// new OpenLayers.Control.MouseDefaults(),
-		// new OpenLayers.Control.KeyboardDefaults()		
-		],
-		projection: P900913,
-		displayProjection: P4326,
-		units: "m",
-		maxResolution: 156543.0339,
-		maxExtent: new OpenLayers.Bounds(-20037508, -20037508, 20037508, 20037508.34),
-		restrictedExtent: new OpenLayers.Bounds(2601697.137233,5817437.653492,2648717.210774,5864556.646252)	
-	};
+  self.map = new OpenLayers.Map(cfg.containerId, mapOptions);
+  map = self.map;
+  $(window).bind('resize', self, self.updateMapSize);
 
-	self.map = new OpenLayers.Map(cfg.containerId, mapOptions);
-	map = self.map;
-	$(window).bind('resize', self, self.updateMapSize );
+  var overview = new OpenLayers.Control.OverviewMap({ maximized: true });
+  map.addControl(overview);
 
-	var overview = new OpenLayers.Control.OverviewMap({'maximized': true});
-	map.addControl(overview);
+  var switcher = new OpenLayers.Control.LayerSwitcher({ ascending: false });
+  map.addControl(switcher);
+  var ls = map.getControlsByClass('OpenLayers.Control.LayerSwitcher')[0];
+  ls.maximizeControl();
 
-	var switcher = new OpenLayers.Control.LayerSwitcher({'ascending':false});
-	map.addControl(switcher);
-	var ls = map.getControlsByClass('OpenLayers.Control.LayerSwitcher')[0];
-	ls.maximizeControl();
+  var attribution = new OpenLayers.Control.Attribution();
+  map.addControl(attribution);
 
-	var attribution = new OpenLayers.Control.Attribution();	
-	map.addControl(attribution);	
+  // create OSM/OAM layer
+  var osmarender = new OpenLayers.Layer.OSM(
+    'OSM (Tiles@Home)',
+    'https://tah.openstreetmap.org/Tiles/tile/${z}/${x}/${y}.png'
+  );
+  // map.addLayer(osmarender);
 
-	// create OSM/OAM layer
-	var osmarender = new OpenLayers.Layer.OSM(
-		"OSM (Tiles@Home)",
-		"https://tah.openstreetmap.org/Tiles/tile/${z}/${x}/${y}.png"
-	);	
-	// map.addLayer(osmarender);		
+  var osm = new OpenLayers.Layer.TMS(
+    'OpenStreetMap',
+    'https://tile.openstreetmap.org/',
+    {
+      type: 'png',
+      getURL: osm_getTileURL,
+      displayOutsideMaxExtent: true,
+      attribution: '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+    }
+  );
+  map.addLayer(osm);
 
-	var osm = new OpenLayers.Layer.TMS( "OpenStreetMap","https://tile.openstreetmap.org/", {
-		type: 'png',
-		getURL: osm_getTileURL,
-		displayOutsideMaxExtent: true,
-		attribution: '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
-	});
-	map.addLayer(osm);
-
-	/*// create Google Mercator layers
+  /*// create Google Mercator layers
 	var gphy = new OpenLayers.Layer.Google(
 		"Google Physical",
 		{type: google.maps.MapTypeId.TERRAIN}
@@ -95,233 +114,253 @@ MapTest = function(cfg) {
 	);
 	map.addLayers([gphy, ghyb]);	*/
 
-	var attr = new OpenLayers.Layer.Vector("Legenda", 
-		{attribution: "  <br><A HREF=\"javascript:void(0)\"onclick=\"var legwin = window.open('templates/legenda_chei.html','Legenda','width=350,height=300,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes');if (window.focus) {legwin.focus()} return false;\">Indicaţii şi legendă</A>     &nbsp;Transparenţă:&nbsp;<a title=\"decrease opacity\" href=\"javascript: changeOpacity(-0.3);\">&lt;&lt;</a><input id=\"opacity\" type=\"text\" value=\"0.6\" size=\"3\" disabled=\"false\" /><a title=\"increase opacity\" href=\"javascript: changeOpacity(0.3);\">&gt;&gt;</a>&nbsp;     <br><A HREF=\"javascript:void(0)\"onclick=\"var legwin = window.open('chei.html','Legenda','width=900,height=600,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes');if (window.focus) {legwin.focus()} return false;\">Deschide harta în altă fereastra</A>      <input type=\"button\" onclick=\"map.zoomToExtent(new OpenLayers.Bounds(2621697.137233,5837437.653492,2628717.210774,5844556.646252))\" value=\"Refresh\">"}
-	);	
-	map.addLayer(attr);			
+  var attr = new OpenLayers.Layer.Vector('Legenda', {
+    attribution:
+      '  <br><A HREF="javascript:void(0)"onclick="var legwin = window.open(\'templates/legenda_chei.html\',\'Legenda\',\'width=350,height=300,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes\');if (window.focus) {legwin.focus()} return false;">Indicaţii şi legendă</A>     &nbsp;Transparenţă:&nbsp;<a title="decrease opacity" href="javascript: changeOpacity(-0.3);">&lt;&lt;</a><input id="opacity" type="text" value="0.6" size="3" disabled="false" /><a title="increase opacity" href="javascript: changeOpacity(0.3);">&gt;&gt;</a>&nbsp;     <br><A HREF="javascript:void(0)"onclick="var legwin = window.open(\'chei.html\',\'Legenda\',\'width=900,height=600,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes\');if (window.focus) {legwin.focus()} return false;">Deschide harta în altă fereastra</A>      <input type="button" onclick="map.zoomToExtent(new OpenLayers.Bounds(2621697.137233,5837437.653492,2628717.210774,5844556.646252))" value="Refresh">',
+  });
+  map.addLayer(attr);
 
-	// Generated by <a href="https://www.maptiler.org/">MapTiler</a>/<a href="https://www.klokan.cz/projects/gdal2tiles/">GDAL2Tiles</a>, Copyright &copy; 2008 <a href="https://www.klokan.cz/">Klokan Petr Pridal</a>,  <a href="https://www.gdal.org/">GDAL</a> &amp; <a href="https://www.osgeo.org/">OSGeo</a> <a href="https://code.google.com/soc/">GSoC</a>	
-	
-	chei = new OpenLayers.Layer.TMS( "Harta detaliata", "",	{
-		type: 'png',
-		getURL: overlay_getTileURL,
-		alpha: true,
-		transparent: true,
-		isBaseLayer: false,
-		visibility: true,
-		opacity: 0.6,
-		attribution: "<br>Generated by <a href=\"https://www.maptiler.org/\">MapTiler</a>/<a href=\"https://www.klokan.cz/projects/gdal2tiles/\">GDAL2Tiles</a>    &nbsp;&nbsp;Copyright (C) 2011 Cheile Aiudului.ro Suns"
-	});
-	map.addLayer(chei);	
+  // Generated by <a href="https://www.maptiler.org/">MapTiler</a>/<a href="https://www.klokan.cz/projects/gdal2tiles/">GDAL2Tiles</a>, Copyright &copy; 2008 <a href="https://www.klokan.cz/">Klokan Petr Pridal</a>,  <a href="https://www.gdal.org/">GDAL</a> &amp; <a href="https://www.osgeo.org/">OSGeo</a> <a href="https://code.google.com/soc/">GSoC</a>
 
-	var defaultStyle = new OpenLayers.Style({
-		'pointRadius': 7,
-		'externalGraphic': "img/marker.png"
-	});
-	var selectStyle = new OpenLayers.Style({
-		'pointRadius': 10,
-		'externalGraphic': "img/marker_s.png"
-	});
-	var poiStyle = new OpenLayers.StyleMap({
-		'default': defaultStyle,
-		'select': selectStyle
-	});	
+  chei = new OpenLayers.Layer.TMS('Harta detaliata', '', {
+    type: 'png',
+    getURL: overlay_getTileURL,
+    alpha: true,
+    transparent: true,
+    isBaseLayer: false,
+    visibility: true,
+    opacity: 0.6,
+    attribution:
+      '<br>Generated by <a href="https://www.maptiler.org/">MapTiler</a>/<a href="https://www.klokan.cz/projects/gdal2tiles/">GDAL2Tiles</a>    &nbsp;&nbsp;Copyright (C) 2011 Cheile Aiudului.ro Suns',
+  });
+  map.addLayer(chei);
 
-	var poi = new OpenLayers.Layer.GML("Puncte de interes", 'kmls/poi.kml', {
-		format: OpenLayers.Format.KML,
-		projection:new OpenLayers.Projection("EPSG:4326"),
-		formatOptions: {
-			'extractStyles': false,
-			'extractAttributes': true
-		},
-		styleMap: poiStyle,
-		visibility: true,
-	});
+  var defaultStyle = new OpenLayers.Style({
+    pointRadius: 7,
+    externalGraphic: 'img/marker.png',
+  });
+  var selectStyle = new OpenLayers.Style({
+    pointRadius: 10,
+    externalGraphic: 'img/marker_s.png',
+  });
+  var poiStyle = new OpenLayers.StyleMap({
+    default: defaultStyle,
+    select: selectStyle,
+  });
 
-	//https://www.mail-archive.com/users@openlayers.org/msg11066.html	
-	var highlightCtrl = new OpenLayers.Control.SelectFeature(poi, {
-		hover: true,
-		highlightOnly: true,
-		renderIntent: "temporary",
-		eventListeners: {
-			featurehighlighted: tooltipSelect, 
-			featureunhighlighted: tooltipUnselect 
-		} 
-	});	
-	map.addControl(highlightCtrl);	
-	highlightCtrl.activate();		
+  var poi = new OpenLayers.Layer.GML('Puncte de interes', 'kmls/poi.kml', {
+    format: OpenLayers.Format.KML,
+    projection: new OpenLayers.Projection('EPSG:4326'),
+    formatOptions: {
+      extractStyles: false,
+      extractAttributes: true,
+    },
+    styleMap: poiStyle,
+    visibility: true,
+  });
 
-	var selectCtrl = new OpenLayers.Control.SelectFeature(poi, {
-		toggle:true, 
-		clickout: true,
-	});
-	poi.events.on({
-		"featureselected": onPoiSelect, 
-		"featureunselected": onPoiUnselect
-	});
-	map.addControl(selectCtrl);
-	selectCtrl.activate();	
+  //https://www.mail-archive.com/users@openlayers.org/msg11066.html
+  var highlightCtrl = new OpenLayers.Control.SelectFeature(poi, {
+    hover: true,
+    highlightOnly: true,
+    renderIntent: 'temporary',
+    eventListeners: {
+      featurehighlighted: tooltipSelect,
+      featureunhighlighted: tooltipUnselect,
+    },
+  });
+  map.addControl(highlightCtrl);
+  highlightCtrl.activate();
 
-	var trasee = new OpenLayers.Layer.GML("Lista trasee", 'kmls/trasee.kml', {
-		format: OpenLayers.Format.KML,
-		projection:new OpenLayers.Projection("EPSG:4326"),
-		formatOptions: {
-			'extractStyles': false,
-			'extractAttributes': true
-		},
-		visibility: false,
-	});	
+  var selectCtrl = new OpenLayers.Control.SelectFeature(poi, {
+    toggle: true,
+    clickout: true,
+  });
+  poi.events.on({
+    featureselected: onPoiSelect,
+    featureunselected: onPoiUnselect,
+  });
+  map.addControl(selectCtrl);
+  selectCtrl.activate();
 
-	map.addLayers([poi, trasee]);	
+  var trasee = new OpenLayers.Layer.GML('Lista trasee', 'kmls/trasee.kml', {
+    format: OpenLayers.Format.KML,
+    projection: new OpenLayers.Projection('EPSG:4326'),
+    formatOptions: {
+      extractStyles: false,
+      extractAttributes: true,
+    },
+    visibility: false,
+  });
 
-	var selectTrasee = new OpenLayers.Control.SelectFeature(trasee,{
-		hover:true,
-		clickFeature:newwin
-	});
-	map.addControl(selectTrasee);
-	selectTrasee.activate();		
+  map.addLayers([poi, trasee]);
 
-	map.zoomToExtent( mapBounds.transform(map.displayProjection, map.projection ) );
-}
+  var selectTrasee = new OpenLayers.Control.SelectFeature(trasee, {
+    hover: true,
+    clickFeature: newwin,
+  });
+  map.addControl(selectTrasee);
+  selectTrasee.activate();
 
-MapTest.prototype = {
-	updateContainerSize: function()	{
-		var self = this;
-
-		var mapHeight = $(window).height();
-		var mapWidth = $(window).width();
-
-		self.$mapContainer.height(mapHeight);
-		self.$mapContainer.width(mapWidth);
-	},
-	updateMapSize: function(event) {
-		var self = event.data;
-
-		self.updateContainerSize();
-		self.map.updateSize();
-	}
+  map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
 };
 
-$(document).ready(function() {
-	var mapTest = new MapTest({
-		containerId: 'map-openlayers'
-	});
+MapTest.prototype = {
+  updateContainerSize: function () {
+    var self = this;
+
+    var mapHeight = $(window).height();
+    var mapWidth = $(window).width();
+
+    self.$mapContainer.height(mapHeight);
+    self.$mapContainer.width(mapWidth);
+  },
+  updateMapSize: function (event) {
+    var self = event.data;
+
+    self.updateContainerSize();
+    self.map.updateSize();
+  },
+};
+
+$(document).ready(function () {
+  var mapTest = new MapTest({
+    containerId: 'map-openlayers',
+  });
 });
 
 function osm_getTileURL(bounds) {
-	var res = this.map.getResolution();
-	var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
-	var y = Math.round((this.maxExtent.top - bounds.top) / (res * this.tileSize.h));
-	var z = this.map.getZoom();
-	var limit = Math.pow(2, z);
+  var res = this.map.getResolution();
+  var x = Math.round(
+    (bounds.left - this.maxExtent.left) / (res * this.tileSize.w)
+  );
+  var y = Math.round(
+    (this.maxExtent.top - bounds.top) / (res * this.tileSize.h)
+  );
+  var z = this.map.getZoom();
+  var limit = Math.pow(2, z);
 
-	if (y < 0 || y >= limit) {
-		return "https://www.maptiler.org/img/none.png";
-	}	else {
-			x = ((x % limit) + limit) % limit;
-			return this.url + z + "/" + x + "/" + y + "." + this.type;
-		}
+  if (y < 0 || y >= limit) {
+    return 'https://www.maptiler.org/img/none.png';
+  } else {
+    x = ((x % limit) + limit) % limit;
+    return this.url + z + '/' + x + '/' + y + '.' + this.type;
+  }
 }
 
 function overlay_getTileURL(bounds) {
-	var res = this.map.getResolution();
-	var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
-	var y = Math.round((bounds.bottom - this.tileOrigin.lat) / (res * this.tileSize.h));
-	var z = this.map.getZoom();
-	if (this.map.baseLayer.name == 'Virtual Earth Roads' || this.map.baseLayer.name == 'Virtual Earth Aerial' || this.map.baseLayer.name == 'Virtual Earth Hybrid') {
-		z = z + 1;
-	}
-	if (mapBounds.intersectsBounds( bounds ) && z >= mapMinZoom && z <= mapMaxZoom ) {
-		//console.log( this.url + z + "/" + x + "/" + y + "." + this.type);
-		return this.url + z + "/" + x + "/" + y + "." + this.type;
-	}	else {
-			return "https://www.maptiler.org/img/none.png";
-		}
+  var res = this.map.getResolution();
+  var x = Math.round(
+    (bounds.left - this.maxExtent.left) / (res * this.tileSize.w)
+  );
+  var y = Math.round(
+    (bounds.bottom - this.tileOrigin.lat) / (res * this.tileSize.h)
+  );
+  var z = this.map.getZoom();
+  if (
+    this.map.baseLayer.name == 'Virtual Earth Roads' ||
+    this.map.baseLayer.name == 'Virtual Earth Aerial' ||
+    this.map.baseLayer.name == 'Virtual Earth Hybrid'
+  ) {
+    z = z + 1;
+  }
+  if (
+    mapBounds.intersectsBounds(bounds) &&
+    z >= mapMinZoom &&
+    z <= mapMaxZoom
+  ) {
+    //console.log( this.url + z + "/" + x + "/" + y + "." + this.type);
+    return this.url + z + '/' + x + '/' + y + '.' + this.type;
+  } else {
+    return 'https://www.maptiler.org/img/none.png';
+  }
 }
 
-function newwin(feature){
-	var newwin1=window.open(
-		'templates/traseele.html',
-		'Trasee de escalada',
-		'width=800,height=300,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes'
-	);
-	if (window.focus) {newwin1.focus()}
-	return false;
+function newwin(feature) {
+  var newwin1 = window.open(
+    'templates/traseele.html',
+    'Trasee de escalada',
+    'width=800,height=300,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes'
+  );
+  if (window.focus) {
+    newwin1.focus();
+  }
+  return false;
 }
 
-function tooltipSelect(event){
-	var feature = event.feature;
-	var selectedFeature = feature;
-	if (feature.popup != null){
-		return;
-	}
-	if (tooltipPopup != null){
-		map.removePopup(tooltipPopup);
-		tooltipPopup.destroy();
-		if(lastFeature != null){
-			delete lastFeature.popup;
-			tooltipPopup = null;
-		}
-	}
-	lastFeature = feature;
-	var tooltipPopup = new OpenLayers.Popup(
-		"temp",
-		feature.geometry.getBounds().getCenterLonLat(),
-		new OpenLayers.Size(80,12),
-		feature.attributes.name,
-		true 
-	);
-	tooltipPopup.contentDiv.style.backgroundColor='ffffcb';
-	tooltipPopup.closeDiv.style.backgroundColor='ffffcb';
-	tooltipPopup.contentDiv.style.overflow='hidden';
-	tooltipPopup.contentDiv.style.padding='3px';
-	tooltipPopup.contentDiv.style.margin='0';
-	tooltipPopup.closeOnMove = true;
-	tooltipPopup.autoSize = true;
-	feature.popup = tooltipPopup;
-	map.addPopup(tooltipPopup);
+function tooltipSelect(event) {
+  var feature = event.feature;
+  var selectedFeature = feature;
+  if (feature.popup != null) {
+    return;
+  }
+  if (tooltipPopup != null) {
+    map.removePopup(tooltipPopup);
+    tooltipPopup.destroy();
+    if (lastFeature != null) {
+      delete lastFeature.popup;
+      tooltipPopup = null;
+    }
+  }
+  lastFeature = feature;
+  var tooltipPopup = new OpenLayers.Popup(
+    'temp',
+    feature.geometry.getBounds().getCenterLonLat(),
+    new OpenLayers.Size(80, 12),
+    feature.attributes.name,
+    true
+  );
+  tooltipPopup.contentDiv.style.backgroundColor = 'ffffcb';
+  tooltipPopup.closeDiv.style.backgroundColor = 'ffffcb';
+  tooltipPopup.contentDiv.style.overflow = 'hidden';
+  tooltipPopup.contentDiv.style.padding = '3px';
+  tooltipPopup.contentDiv.style.margin = '0';
+  tooltipPopup.closeOnMove = true;
+  tooltipPopup.autoSize = true;
+  feature.popup = tooltipPopup;
+  map.addPopup(tooltipPopup);
 }
 
-function tooltipUnselect(event){
-	var feature = event.feature;
-	if (feature != null && feature.popup != null) {
-		map.removePopup(feature.popup);
-		feature.popup.destroy();
-		delete feature.popup;
-		tooltipPopup = null;
-		lastFeature = null;
-	}
+function tooltipUnselect(event) {
+  var feature = event.feature;
+  if (feature != null && feature.popup != null) {
+    map.removePopup(feature.popup);
+    feature.popup.destroy();
+    delete feature.popup;
+    tooltipPopup = null;
+    lastFeature = null;
+  }
 }
 
 function onPoiSelect(event) {
-	tooltipUnselect(event);
-	var feature = event.feature;
-	var selectedFeature = feature;
-	var popup = new OpenLayers.Popup.FramedCloud(
-		"active",
-		feature.geometry.getBounds().getCenterLonLat(),
-		new OpenLayers.Size(100,100),
-		feature.attributes.name,
-		null,
-		true,
-		function () {
-			map.removePopup( popup ); 
-			popup.destroy();
-			popup = null;
-		}
-	);
-	feature.popup = popup;
-	popup.setOpacity(0.7);
-	map.addPopup(popup);
+  tooltipUnselect(event);
+  var feature = event.feature;
+  var selectedFeature = feature;
+  var popup = new OpenLayers.Popup.FramedCloud(
+    'active',
+    feature.geometry.getBounds().getCenterLonLat(),
+    new OpenLayers.Size(100, 100),
+    feature.attributes.name,
+    null,
+    true,
+    function () {
+      map.removePopup(popup);
+      popup.destroy();
+      popup = null;
+    }
+  );
+  feature.popup = popup;
+  popup.setOpacity(0.7);
+  map.addPopup(popup);
 }
 
 function onPoiUnselect(event) {
-	var feature = event.feature;
-	if (feature.popup) {
-		map.removePopup(feature.popup);
-		feature.popup.destroy();
-		delete feature.popup;
-	}
+  var feature = event.feature;
+  if (feature.popup) {
+    map.removePopup(feature.popup);
+    feature.popup.destroy();
+    delete feature.popup;
+  }
 }
 
-/*]]>*/		
+/*]]>*/
