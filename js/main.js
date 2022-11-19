@@ -37,7 +37,7 @@ var P900913 = new OpenLayers.Projection('EPSG:900913');
 MapTest = function (cfg) {
   var self = this;
   var i;
-  self.$mapContainer = $('#' + cfg.containerId);
+  self.mapContainer = document.querySelector(`#${cfg.containerId}`);
   self.updateContainerSize();
 
   mapOptions = {
@@ -70,7 +70,10 @@ MapTest = function (cfg) {
 
   self.map = new OpenLayers.Map(cfg.containerId, mapOptions);
   map = self.map;
-  $(window).bind('resize', self, self.updateMapSize);
+
+  window.addEventListener('resize', () => {
+    self.updateMapSize();
+  });
 
   var overview = new OpenLayers.Control.OverviewMap({ maximized: true });
   map.addControl(overview);
@@ -188,11 +191,11 @@ MapTest.prototype = {
   updateContainerSize: function () {
     var self = this;
 
-    var mapHeight = $(window).height();
-    var mapWidth = $(window).width();
+    var mapHeight = window.innerHeight;
+    var mapWidth = window.innerWidth;
 
-    self.$mapContainer.height(mapHeight);
-    self.$mapContainer.width(mapWidth);
+    self.mapContainer.height = mapHeight;
+    self.mapContainer.width = mapWidth;
   },
   updateMapSize: function (event) {
     var self = event.data;
@@ -202,7 +205,8 @@ MapTest.prototype = {
   },
 };
 
-$(document).ready(function () {
+docReady(function () {
+  // DOM is loaded and ready for manipulation here
   var mapTest = new MapTest({
     containerId: 'map-openlayers',
   });
@@ -342,4 +346,15 @@ function onPoiUnselect(event) {
   }
 }
 
-/*]]>*/
+function docReady(fn) {
+  // see if DOM is already available
+  if (
+    document.readyState === 'complete' ||
+    document.readyState === 'interactive'
+  ) {
+    // call on next available tick
+    setTimeout(fn, 1);
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
