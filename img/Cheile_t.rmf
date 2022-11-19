@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<RasterMetaFile>
+<Statistics>
+	<BandCount>4</BandCount>
+	<Band>
+		<Max>255.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>254.0</SecondMax>
+		<SecondMin>1.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>180.31023182711158</Mean>
+		<Variance>7229.792165102248</Variance>
+	</Band>
+	<Band>
+		<Max>255.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>254.0</SecondMax>
+		<SecondMin>1.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>247.57608706554024</Mean>
+		<Variance>501.9061421336082</Variance>
+	</Band>
+	<Band>
+		<Max>255.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>254.0</SecondMax>
+		<SecondMin>1.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>162.8877854690817</Mean>
+		<Variance>1841.7064927850952</Variance>
+	</Band>
+	<Band>
+		<Max>255.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>0.0</SecondMax>
+		<SecondMin>255.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>224.78400683282266</Mean>
+		<Variance>6792.072014551319</Variance>
+	</Band>
+</Statistics>
+</RasterMetaFile>
